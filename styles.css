@@ -30,3 +30,42 @@
 .event-card.type-internacional .type-pill{background:#fff0d5;color:#88530c}
 .day-event.internacional{border-color:#bd7b18;background:#fff0d5;color:#88530c}
 .dot-internacional{background:#bd7b18}
+
+/* Calendario: etiquetas legibles exclusivamente en pantallas móviles. */
+@media (max-width: 600px) {
+  .calendar-day {
+    min-height: 156px;
+    padding: 5px 3px;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  .calendar-day .day-event {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin-top: 5px;
+    padding: 4px 2px;
+    border: 0;
+    border-left: 2px solid #2d75bd;
+    border-radius: 3px;
+    font-size: 9px;
+    line-height: 1.25;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-align: left;
+  }
+  .calendar-day .day-event.cup { border-left-color: #e94b50; }
+  .calendar-day .day-event.special { border-left-color: #28a47b; }
+  .calendar-day .day-event.regional { border-left-color: #8056c7; }
+  .calendar-day .day-event.special-event { border-left-color: #d49b24; }
+  .calendar-day .day-event.internacional { border-left-color: #bd7b18; }
+  .calendar-day .more-events {
+    display: block;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
